@@ -1,0 +1,88 @@
+@media print {
+
+    @page {
+        size: landscape;
+    }
+
+}
+
+@font-face {
+    font-family: cloister;
+    src: url('../fonts/DS-Cloister-Black.ttf');
+}
+
+.ribbon-1 {
+    position: fixed;
+    background: #08769b;
+    box-shadow: 0 0 0 999px #08769b;
+    clip-path: inset(0 -100%);
+  }
+  .left {
+    inset: 0 auto auto 0;
+    transform-origin: 100% 0;
+    transform: translate(-29.3%) rotate(-45deg);
+    color: white;
+  }
+  .right {
+    inset: 0 0 auto auto;
+    transform-origin: 0 0;
+    transform: translate(29.3%) rotate(45deg);
+    color: white;
+  }
+  
+  html {
+    line-height: 1.3em;
+    font-family: sans-serif;
+    font-size: 25px;
+  }
+
+  .title-cert {
+    color: #172F5E;
+    font-family: 'cloister';
+    font-size: 70px;
+    text-align: center;
+    margin: 4%;
+  }
+
+  p {
+    text-align: center;
+    font-style: italic;
+    color: #04313f; 
+    font-size: 24px;
+  }
+
+  .name {
+    color: #172F5E;
+    font-family: 'cloister';
+    font-size: 57px;
+    text-align: center;
+    margin: 2%;
+  }
+
+  .qr {
+    width: 150px; 
+    height: auto;
+}
+
+    .logo {
+        display: grid;
+        justify-content: center; /* Centra horizontalmente */
+        align-items: center; /* Centra verticalmente */
+        margin: 1%;
+    }
+
+    .logo img {
+        height: auto;
+        width: 150px;
+    }
+
+    .foo {
+        display: flex;
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .foo span {
+        font-size: 15px;
+        color: #172F5E;
+    }

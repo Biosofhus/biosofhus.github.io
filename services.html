@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/apple-icon.webp">
+    <link rel="icon" type="image/webp" href="img/favicon.webp">
+    <title>Biosofhus - Pagina Principal </title>
+    <meta content="Pagina Principal - Biosofhus - Plataforma de cursos online" name="description">
+    <meta content="courses online cursos plataforma" name="keywords">
+    <meta name="author" content="biosofhus">
+    <link href="css/nucleo-icons.css" rel="stylesheet" />
+    <link href="css/nucleo-svg.css" rel="stylesheet" />
+    <link href="css/font-awesome.css" rel="stylesheet" />
+    <link href="css/nucleo-svg.css" rel="stylesheet" />
+    <link href="css/index.css" rel="stylesheet" />
+
+    <link href="css/argon-design-system.css?v=1.2.2" rel="stylesheet" />
+    <link href="css/curso_style.css" rel="stylesheet" />
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.3.1/styles/default.min.css">
+
+    <style>
+        a.default-text {
+            color: #000000;
+        }
+
+        a.default-text:hover {
+            color: #2969BC !important;
+        }
+    </style>
+
+
+    <script type="text/javascript">
+        function callbackThen(response) {
+            console.log(response.status);
+            response.json().then(function (data) {
+                console.log(data);
+            });
+        } function callbackCatch(error) {
+            console.error('Error:', error)
+        }
+    </script>
+
+</head>
+
+<body class="index-page">
+
+    <nav id="navbar-main" class="navbar navbar navbar-main navbar-expand-lg bg-white navbar-light position-sticky top-0 shadow py-2
+    cardd">
+        <div class="container">
+            <a class="navbar-brand mr-lg-5" href="/">
+                <img alt="logoImage" height="" width="" src="img/brand/blue.webp">
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar_global"
+                aria-controls="navbar_global" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="navbar-collapse collapse" id="navbar_global">
+                <div class="navbar-collapse-header">
+                    <div class="row">
+                        <div class="col-6 collapse-brand">
+                            <a href="/">
+                                <img alt="logoImageblue" height="" width="" src="img/brand/blue.webp">
+                            </a>
+                        </div>
+                        <div class="col-6 collapse-close">
+                            <button type="button" class="navbar-toggler" data-toggle="collapse"
+                                data-target="#navbar_global" aria-controls="navbar_global" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <span></span>
+                                <span></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <ul class="navbar-nav navbar-nav-hover align-items-lg-center">
+                    <li class="nav-item dropdown">
+                        <a href="/" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                            <i class="ni ni-ui-04 d-lg-none"></i>
+                            <span class="nav-link-inner--text">Home</span>
+                        </a>
+                    
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link" data-toggle="dropdown" href="#" role="button">
+                            <i class="ni ni-ui-04 d-lg-none"></i>
+                            <span class="nav-link-inner--text">Servicios</span>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-xl">
+                            <div class="dropdown-menu-inner">
+                                <a href=" " class="media d-flex align-items-center">
+                                    <div class="icon icon-shape bg-gradient-info rounded-circle text-white">
+                                        <i class="ni ni-ruler-pencil"></i>
+                                    </div>
+                                    <div class="media-body ml-3">
+                                        <h6 class="heading text-info mb-md-1">Capacitaciones</h6>
+                                        <p class="description d-none d-md-inline-block mb-0">Programa una cita con
+                                            nosotros para que te ayudemos en los temas que enseñamos aquí.</b></p>
+                                    </div>
+                                </a>
+                                <a href=" " class="media d-flex align-items-center">
+                                    <div class="icon icon-shape bg-gradient-default rounded-circle text-white">
+                                        <i class="ni ni-laptop"></i>
+                                    </div>
+                                    <div class="media-body ml-3">
+                                        <h6 class="heading text-default mb-md-1">Análisis de datos</h6>
+                                        <p class="description d-none d-md-inline-block mb-0">Podemos ayudarte con un
+                                            proyecto que tienes en marcha.</p>
+                                    </div>
+                                </a>
+                                <a href=" " class="media d-flex align-items-center">
+                                    <div class="icon icon-shape bg-gradient-success rounded-circle text-white">
+                                        <i class="ni ni-user-run"></i>
+                                    </div>
+                                    <div class="media-body ml-3">
+                                        <h5 class="heading text-success mb-md-1">Trabaja con Nosotros</h5>
+                                        <p class="description d-none d-md-inline-block mb-0">Si estás interesado en los
+                                            temas que hacemos aquí, ¡trabajemos juntos!</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a href="https://blog.biosofhus.org.pe/" class="nav-link" role="button">
+                            <i class="ni ni-ui-04 d-lg-none"></i>
+                            <span class="nav-link-inner--text">Blog</span>
+                        </a>
+                    </li>
+
+                </ul>
+                <ul class="navbar-nav align-items-lg-center ml-lg-auto">
+                    <li class="nav-item">
+                        <a alt="facebook" class="nav-link nav-link-icon" href="https://www.facebook.com/sofhus/"
+                            target="_blank" data-toggle="tooltip" title=" " aria-label="Página de facebook">
+                            <i class="fa fa-facebook-square"></i>
+                            <span class="nav-link-inner--text d-lg-none">Facebook</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a alt="instagram" class="nav-link nav-link-icon" href="/" target="_blank" data-toggle="tooltip"
+                            title=" " aria-label="Página de Instagram">
+                            <i class="fa fa-instagram"></i>
+                            <span class="nav-link-inner--text d-lg-none">Instagram</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a alt="youtube" class="nav-link nav-link-icon"
+                            href="https://www.youtube.com/channel/UCWQzcXQ25GqWxo4mxFTJ64w" target="_blank"
+                            data-toggle="tooltip" title=" " aria-label="Canal de Youtube">
+                            <i class="fa fa-youtube-square"></i>
+                            <span class="nav-link-inner--text d-lg-none">Youtube</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a alt="github" class="nav-link nav-link-icon" href="https://github.com/Biosofhus"
+                            target="_blank" data-toggle="tooltip" title=" " aria-label="Página de Github">
+                            <i class="fa fa-github"></i>
+                            <span class="nav-link-inner--text d-lg-none">Github</span>
+                        </a>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <section class="section section-lg">
+        <div class="container">
+            <!-- Inicio -->
+            <div class="row row-grid justify-content-center">
+                <div class="col-lg-12 text-center">
+                    <h1 class="display-3">Análisis de Datos <span class="text-success">Para <b>Bioinformática</b></h1>
+                    <p class="lead">En <b>Biosofhus</b>, nuestro enfoque principal es el análisis de datos en el campo
+                        de
+                        la bioinformática.
+                        Contamos con un equipo altamente especializado en <b>bioinformática</b> y <b>ciencia de
+                            datos</b>,
+                        dedicado a proveer soluciones efectivas y resultados de alto impacto para proyectos de
+                        investigación
+                        y desarrollo.
+                        Te invitamos a descubrir cómo nuestra colaboración puede <b>optimizar y efectivizar tus análisis
+                            de
+                            datos</b>, asegurando
+                        resultados que contribuyen significativamente a tus objetivos.</p>
+
+                </div>
+            </div>
+            <!-- Sobre los Servicios -->
+            <div class="row row-grid justify-content-center mb-4">
+                <div class="col-lg-12 text-center">
+
+                    <div class="section features-6">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-6">
+                                    <div class="info info-horizontal info-hover-primary">
+                                        <div class="description pl-4">
+                                            <h4 class="title text-success">Data Visualization</h4>
+                                            <p>Biosofhus ofrece servicios avanzados en visualización de datos para el
+                                                campo
+                                                de la
+                                                <b>bioinformática</b>. Nos enfocamos en transformar datos complejos en
+                                                representaciones
+                                                gráficas claras y útiles, utilizando herramientas especializadas.
+                                                Nuestro servicio está diseñado para apoyar a <b>investigadores</b> y
+                                                <b>laboratorios</b>
+                                                en la interpretación eficiente de datos biológicos.
+                                            </p>
+
+
+                                        </div>
+                                    </div>
+                                    <div class="info info-horizontal info-hover-primary mt-5">
+                                        <div class="description pl-4">
+                                            <h4 class="title text-primary">Plataformas interactivas</h4>
+                                            <p>Tambien brindamos plataformas interactvas para que puedan generar
+                                                graficos y
+                                                metricas al instante.
+                                                Desde una implementacion local a una plataforma en Linea de acceso
+                                                esclusivo
+                                                .</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-10 mx-md-auto cardd">
+                                    <img class="ml-lg-5" src="img/pages/dendrogram.gif" height="" width="100%"
+                                        loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="section features-6">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8 col-10 mx-md-auto video">
+                                    <img class="ml-lg-5" src="img/pages/analysis.gif" height="" width="100%"
+                                        loading="lazy">
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="info info-horizontal info-hover-primary">
+                                        <div class="description pl-4">
+                                            <h4 class="title text-success">Omics Workflow</h4>
+                                            <p>Biosofhus implementa flujos de trabajo especializados en <b>genómica</b>,
+                                                <b>transcriptómica</b> y
+                                                <b>metagenómica</b>, optimizados para investigaciones en bioinformática.
+                                                Nuestros procesos garantizan
+                                                análisis precisos y detallados, adaptándose a las necesidades
+                                                específicas de
+                                                cada proyecto de investigación.
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="section features-6">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8 col-10 mx-md-auto video">
+                                    <script async id="asciicast-83ALeSPSTLUZzL6f4IgEze75M"
+                                        src="https://asciinema.org/a/83ALeSPSTLUZzL6f4IgEze75M.js">
+                                        </script>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="info info-horizontal info-hover-primary">
+                                        <div class="description pl-4">
+                                            <h4 class="title text-success">Manejo de terminal linux</h4>
+                                            <p>Biosofhus ofrece capacitaciones especializadas en el uso de la <b>terminal</b> y el
+                                                procesamiento
+                                                de datos en <b>bioinformática</b>. Nuestras capacitaciones están diseñados para enseñar a
+                                                investigadores
+                                                cómo aprovechar al máximo las capacidades de la <b>línea de comandos en Linux</b>, desde la
+                                                administración básica de servidores hasta técnicas avanzadas de análisis de datos
+                                                biológicos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>      </div>
+
+                    <div class="section features-6">
+                        <div class="container">
+                            <div class="row align-items-center">
+                                <div class="col-lg-7">
+                                    <div class="info info-horizontal info-hover-primary">
+                                        <h4 class="title text-success">Análisis de datos con R</h4>
+                                        <pre><code class="language-r hljs"><span class="hljs-comment"></span>barplot<span class="hljs-punctuation">(</span>height <span class="hljs-operator">=</span> gene<span class="hljs-operator">$</span>V1<span class="hljs-punctuation">,</span> border <span class="hljs-operator">=</span> <span class="hljs-literal">FALSE</span><span class="hljs-punctuation">,</span> names.arg <span class="hljs-operator">=</span> gene<span class="hljs-operator">$</span>V2<span class="hljs-punctuation">,</span> 
+    las <span class="hljs-operator">=</span> <span class="hljs-number">1</span> <span class="hljs-punctuation">,</span>col <span class="hljs-operator">=</span> heat.colors<span class="hljs-punctuation">(</span><span class="hljs-number">25</span><span class="hljs-punctuation">)</span><span class="hljs-punctuation">,</span>
+    main <span class="hljs-operator">=</span> <span class="hljs-string">"Genes por Cromosoma"</span><span class="hljs-punctuation">)</span></code></pre>
+                                    </div>
+
+                                    <div class="info info-horizontal info-hover-primary">
+                                        <h4 class="title text-primary">Análisis de datos con Python</h4>
+                                        <pre><code class="language-python hljs"><span class="hljs-keyword">from</span> Bio <span class="hljs-keyword">import</span> Entrez
+    Entrez.email = <span class="hljs-string">"ejemplo@correo.com"</span>
+    handle = Entrez.efetch(db=<span class="hljs-string">"Nucleotide"</span>, <span class="hljs-built_in">id</span>=<span class="hljs-string">"AY994334.1"</span>,
+    rettype=<span class="hljs-string">"fasta"</span>,retmode=<span class="hljs-string">"text"</span>)
+    <span class="hljs-built_in">print</span>(handle.read())</code></pre>
+                                    </div>
+                                </div>
+                                <div class="col-lg-5 col-10 mx-md-auto cardd">
+                                    <img class="ml-lg-5" src="img/pages/3d-toggle.gif"
+                                        width="100%" height="" loading="lazy">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="section section-lg section-shaped">
+        <div class="shape shape-style-2 shape-dark">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+        <div class="container py-md">
+            <div class="row row-grid justify-content-between align-items-center">
+                <div class="col-lg-6">
+                    <h3 class="display-3 text-white">Para mas información<span class="text-white">Contactanos</span>
+                    </h3>
+                    <p class="lead text-white">En Biosofhus, estamos comprometidos con brindar soluciones de alta
+                        calidad
+                        en bioinformática.
+                        Si tienes preguntas, necesitas más información sobre nuestros servicios o quieres discutir cómo
+                        podemos ayudarte
+                        con tus necesidades específicas, no dudes en ponerte en contacto con nosotros:</p>
+                    <div class="btn-wrapper">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=info@biosofhus.org.pe"
+                            alt="email message" class="btn btn-secondary" target="_blank">
+                            <i class="fa fa-envelope"></i>&emsp;Email</a>
+                        <a href="https://api.whatsapp.com/send/?phone=51950600047&text&type=phone_number&app_absent=0"
+                            alt="whatsapp message" class="btn btn-success" target="_blank">
+                            <i class="fa fa-whatsapp"></i>&emsp;whatsapp</a>
+                    </div>
+                </div>
+                <div class="col-lg-5 mb-lg-auto">
+                    <div class="transform-perspective-right">
+                        <div class="card bg-secondary shadow border-0">
+                            <img height="" width="" src="img/ill/contact_capa.gif" loading="lazy"
+                                alt="contact gif" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+       
+
+        <!-- SVG separator -->
+        <div class="separator separator-bottom separator-skew">
+            <svg x="0" y="0" viewBox="0 0 2560 100" preserveAspectRatio="none" version="1.1"
+                xmlns="http://www.w3.org/2000/svg">
+                <polygon class="fill-white" points="2560 0 2560 100 0 100"></polygon>
+            </svg>
+        </div>
+    </section>
+
+
+    <footer class="footer has-cards">
+        <div class="container">
+            <div class="row row-grid align-items-center my-md">
+                <div class="col-lg-6">
+                    <h3 class="text-primary font-weight-light mb-2">¡Gracias por Seguirnos!</h3>
+                    <h4 class="mb-0 font-weight-light">Pongámonos en contacto en cualquiera de estas plataformas.</h4>
+                </div>
+                <div class="col-lg-6 text-lg-center btn-wrapper">
+                    <!-- Botón de Twitter -->
+                    <a target="_blank" href="https://www.youtube.com/channel/UCWQzcXQ25GqWxo4mxFTJ64w" rel="nofollow"
+                        class="btn btn-icon-only btn-youtube rounded-circle" data-toggle="tooltip"
+                        aria-label="Canal de youtube" data-original-title="Sucribete" alt="youtube">
+                        <span class="btn-inner--icon"><i class="fa fa-youtube"></i></span>
+                    </a>
+
+                    <!-- Botón de Facebook -->
+                    <a target="_blank" href="https://www.facebook.com/sofhus/" rel="nofollow"
+                        class="btn-icon-only rounded-circle btn btn-facebook" data-toggle="tooltip"
+                        aria-label="Página de facebook" data-original-title="Like" alt="facebook">
+                        <span class="btn-inner--icon"><i class="fa fa-facebook"></i></span>
+                    </a>
+
+                    <!-- Botón de Instagram -->
+                    <a target="_blank" href="https://www.instagram.com/tuUsuarioInstagram" rel="nofollow"
+                        class="btn btn-icon-only btn-dribbble rounded-circle" data-toggle="tooltip"
+                        aria-label="Página de instagram" data-original-title="Like" alt="instagram">
+                        <span class="btn-inner--icon"><i class="fa fa-instagram"></i></span>
+                    </a>
+
+                    <!-- Botón de GitHub -->
+                    <a target="_blank" href="https://github.com/Biosofhus"
+                        class="btn btn-icon-only btn-github rounded-circle" data-toggle="tooltip"
+                        aria-label="Página de github" data-original-title="Github" alt="Github">
+                        <span class="btn-inner--icon"><i class="fa fa-github"></i></span>
+                    </a>
+
+                </div>
+            </div>
+            <hr>
+            <div class="row align-items-center justify-content-md-between">
+                <div class="col-md-6">
+                    <div class="copyright">
+                        &copy; 2015 <a href="/">Biosofhus - Asvi</a>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <ul class="nav nav-footer justify-content-end">
+                        <li class="nav-item">
+                            <a href="" class="nav-link" target="_blank">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link" target="_blank">Términos y
+                                Condiciones</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link" target="_blank">Politica de
+                                Privacidad</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/core/jquery.min.js" type="text/javascript"></script>
+    <script src="js/core/popper.min.js" type="text/javascript"></script>
+    <script src="js/core/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/plugins/perfect-scrollbar.jquery.min.js"></script>
+    <script src="js/plugins/bootstrap-switch.js"></script>
+    <script src="js/plugins/nouislider.min.js" type="text/javascript"></script>
+    <script src="js/argon-design-system.min.js?v=1.2.2" type="text/javascript"></script>
+
+    <script>
+        $(document).ready(function () {
+            $('#modal-notification').modal('show');
+        });
+    </script>
+</body>
+
+</html>
